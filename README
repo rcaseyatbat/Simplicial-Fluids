@@ -1,0 +1,26 @@
+
+To compile this program, simple type "make" (or if on OSX, "make -f Makefile.macosx").
+
+This will create an executable called "oglRenderer".
+
+PROGRAM: oglRenderer
+
+Usage: ./oglRenderer [xRes] [yRes] < [.iv file]
+
+For example, run as follows:
+oglRenderer 400 400 < hw4-data/cube2.iv
+
+The program starts with Gouraud lighting (and obviously lighting enabled).
+Press 'w' to show the wireframe version of the object (this disables lighting).
+Press 'f' to show the object with Flat lighting (this re-enables lighting).
+Press 'g' to show the object with Gouraud lighting (re-enables lighting).
+
+Zoom in by pressing SHIFT and dragging with the middle mouse button pressed.
+	(Zoom implemented as a -z transformation based on the vertical drag)
+Pan around (move directions) by dragging with the middle mouse button pressed.
+	(Panning implemented as a translation in x and y based on the horizontal 
+	and vertical drag)
+Rotate around the object by dragging with the left mouse button pressed
+	(Rotation implemented as rotation around the axis that was dragged, with the 
+	angle proportional to the length of the drag)
+Exit the program with 'q', 'Q', or the Esc key.
